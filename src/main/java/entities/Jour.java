@@ -2,6 +2,7 @@ package entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
@@ -12,9 +13,11 @@ import java.util.Objects;
                 @NamedQuery(name = "Jours.findByNbrJ", query = "SELECT j FROM Jour j WHERE j.nbrJour<=:nbrJour ORDER BY j.nbrJour DESC"),
                 @NamedQuery(name = "Jours.findByNbrJExact", query = "SELECT j FROM Jour j WHERE j.nbrJour=:nbrJour"),
         })
-public class Jour {
+public class Jour implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdJour", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotNull

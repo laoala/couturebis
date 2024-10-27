@@ -5,13 +5,13 @@ import org.apache.log4j.Logger;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class SvcLocalite extends Service<Localite> implements Serializable {
     //Déclaration des variables
     private static final Logger log = Logger.getLogger(SvcArticle.class);
     private static final long serialVersionUID = 1L;
-    Map<String, Object> params = new HashMap<String, Object>();
 
     public SvcLocalite() {
         super();
@@ -25,7 +25,11 @@ public class SvcLocalite extends Service<Localite> implements Serializable {
         } else {
             localite = em.merge(localite);
         }
-
         return localite;
+    }
+
+    //Méthode qui permet via une requete de retourner la liste entière des localités
+    public List<Localite> findAllLocalites() {
+        return finder.findByNamedQuery("Localite.findAll", null);
     }
 }

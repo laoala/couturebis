@@ -41,7 +41,9 @@ public class SvcAdresse extends Service<Adresse> implements Serializable {
     // Méthode qui permet de sauver une adresse et de la mettre en DB
     @Override
     public Adresse save(Adresse adresse) {
-        if (adresse.getId() == 0) {
+        if (adresse.getId() == null) {
+            em.persist(adresse);
+        } else if (adresse.getId()==0) {
             em.persist(adresse);
         } else {
             adresse = em.merge(adresse);

@@ -6,15 +6,18 @@ import org.eclipse.persistence.jpa.jpql.parser.DateTime;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 
 @Entity
 @Table(name = "facture")
-public class Facture {
+public class Facture implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdFacture", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotNull

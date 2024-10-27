@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 
 import javax.enterprise.context.SessionScoped;
 import javax.faces.application.ViewHandler;
+import javax.faces.bean.ManagedBean;
 import javax.faces.component.UIViewRoot;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
@@ -14,6 +15,7 @@ import java.util.TimeZone;
 
 @Named
 @SessionScoped
+@ManagedBean
 public class I18nBean implements Serializable {
 
     private static final long serialVersionUID = 1L;

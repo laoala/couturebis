@@ -2,15 +2,18 @@ package entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
 @Entity
 @Table(name = "tarif_jour")
-public class TarifJour {
+public class TarifJour implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdTarifJour", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotNull

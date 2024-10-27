@@ -3,15 +3,18 @@ package entities;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
 @Entity
 @Table(name = "tarif")
-public class Tarif {
+public class Tarif implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdTarif", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 255)

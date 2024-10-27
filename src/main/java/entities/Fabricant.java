@@ -1,18 +1,18 @@
 package entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "fabricant")
-public class Fabricant {
+public class Fabricant implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdFabricant", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 255)

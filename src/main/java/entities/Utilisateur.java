@@ -5,6 +5,7 @@ import enumeration.UtilisateurSexeEnum;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -14,21 +15,23 @@ import java.util.Objects;
         ({
                 @NamedQuery(name = "Utilisateur.findAll", query = "SELECT u FROM Utilisateur u"),
                 @NamedQuery(name = "Utilisateur.findOne", query = "SELECT u FROM Utilisateur u WHERE  u.nom=:nom AND u.prenom=:prenom AND u.courriel=:courriel AND u.sexe=:sexe"),
-                @NamedQuery(name = "Utilisateur.findAllUtil", query = "SELECT u FROM Utilisateur u WHERE u.numMembre IS NULL"),
-                @NamedQuery(name = "Utilisateur.findActiv", query = "SELECT u FROM Utilisateur u WHERE u.actif=TRUE AND u.numMembre IS NULL"),
-                @NamedQuery(name = "Utilisateur.findInactiv", query = "SELECT u FROM Utilisateur u WHERE u.actif=FALSE AND u.numMembre IS NULL"),
-                @NamedQuery(name=  "Utilisateur.searchName", query="SELECT u FROM Utilisateur u WHERE u.nom=:nom AND u.numMembre IS NOT NULL"),
-                @NamedQuery(name = "Utilisateur.findLastMembre", query = "SELECT u FROM Utilisateur u WHERE u.numMembre IS NOT NULL ORDER BY u.numMembre DESC"),
+                @NamedQuery(name = "Utilisateur.findAllUtil",query = "SELECT DISTINCT  u FROM Utilisateur u , UtilisateurRole ur WHERE u.id=ur.utilisateurIdUtilisateur.id and ur.roleIdRole.id != 4"),
+                @NamedQuery(name = "Utilisateur.findActiv", query = "SELECT u FROM Utilisateur u , UtilisateurRole ur WHERE u.actif=TRUE AND u.numMembre IS NULL"),
+                @NamedQuery(name = "Utilisateur.findInactiv", query = "SELECT u FROM Utilisateur u , UtilisateurRole ur WHERE u.actif=FALSE AND u.numMembre IS NULL"),
+                @NamedQuery(name=  "Utilisateur.searchName", query="SELECT u FROM Utilisateur u , UtilisateurRole ur WHERE u.nom=:nom AND u.id=ur.utilisateurIdUtilisateur.id AND ur.roleIdRole.id=4"),
+                @NamedQuery(name = "Utilisateur.findLastMembre", query = "SELECT u FROM Utilisateur u , UtilisateurRole ur WHERE u.id=ur.utilisateurIdUtilisateur.id AND ur.roleIdRole.id=4 ORDER BY u.numMembre DESC"),
                 @NamedQuery(name = "Utilisateur.searchMembre", query = "SELECT u FROM Utilisateur u WHERE u.numMembre=:numMembre"),
                 @NamedQuery(name = "Utilisateur.findByLogin", query = "SELECT u FROM Utilisateur u WHERE u.login=:login"),
                 @NamedQuery(name = "Utilisateur.findByLoginMail", query = "SELECT u FROM Utilisateur u WHERE u.login=:login AND u.courriel=:courriel"),
-                @NamedQuery(name = "Utilisateur.findAllCli", query = "SELECT u FROM Utilisateur u WHERE u.numMembre IS NOT NULL"),
-                @NamedQuery(name = "Utilisateur.findCliActiv", query = "SELECT u FROM Utilisateur u WHERE u.actif=TRUE AND u.numMembre IS NOT NULL"),
-                @NamedQuery(name = "Utilisateur.findCliInactiv", query = "SELECT u FROM Utilisateur u WHERE u.actif=FALSE AND u.numMembre IS NOT NULL"),
+                @NamedQuery(name = "Utilisateur.findAllCli", query = "SELECT u FROM Utilisateur u , UtilisateurRole ur WHERE u.id=ur.utilisateurIdUtilisateur.id AND ur.roleIdRole.id=4"),
+                @NamedQuery(name = "Utilisateur.findCliActiv", query = "SELECT u FROM Utilisateur u , UtilisateurRole ur WHERE u.actif=TRUE AND u.id=ur.utilisateurIdUtilisateur.id AND ur.roleIdRole.id=4"),
+                @NamedQuery(name = "Utilisateur.findCliInactiv", query = "SELECT u FROM Utilisateur u , UtilisateurRole ur WHERE u.actif=FALSE AND u.id=ur.utilisateurIdUtilisateur.id AND ur.roleIdRole.id=4"),
         })
-public class Utilisateur {
+public class Utilisateur implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdUtilisateur", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 150)
@@ -185,11 +188,11 @@ public class Utilisateur {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Utilisateur that = (Utilisateur) o;
-        return Objects.equals(id, that.id) && Objects.equals(nom, that.nom) && Objects.equals(prenom, that.prenom) && sexe == that.sexe && Objects.equals(courriel, that.courriel) && Objects.equals(login, that.login) && Objects.equals(mdp, that.mdp) && Objects.equals(actif, that.actif) && Objects.equals(numMembre, that.numMembre) && Objects.equals(factures, that.factures) && Objects.equals(utilisateurAdresse, that.utilisateurAdresse) && Objects.equals(utilisateurMagasin, that.utilisateurMagasin) && Objects.equals(utilisateurRole, that.utilisateurRole);
+        return Objects.equals(id, that.id) && Objects.equals(nom, that.nom) && Objects.equals(prenom, that.prenom) && sexe == that.sexe && Objects.equals(courriel, that.courriel) && Objects.equals(login, that.login) && Objects.equals(mdp, that.mdp) && Objects.equals(actif, that.actif) && Objects.equals(numMembre, that.numMembre);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nom, prenom, sexe, courriel, login, mdp, actif, numMembre, factures, utilisateurAdresse, utilisateurMagasin, utilisateurRole);
+        return Objects.hash(id, nom, prenom, sexe, courriel, login, mdp, actif, numMembre);
     }
 }

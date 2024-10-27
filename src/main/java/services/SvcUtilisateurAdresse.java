@@ -1,6 +1,8 @@
 package services;
 
 import entities.UtilisateurAdresse;
+import entities.Adresse;
+import entities.Utilisateur;
 import org.apache.log4j.Logger;
 
 import java.io.Serializable;
@@ -25,7 +27,15 @@ public class SvcUtilisateurAdresse extends Service<UtilisateurAdresse> implement
         } else {
             utilisateurAdresse = em.merge(utilisateurAdresse);
         }
-
         return utilisateurAdresse;
     }
+
+    public UtilisateurAdresse createUtilisateurAdresse(Utilisateur u, Adresse a)
+        {
+            UtilisateurAdresse ua = new UtilisateurAdresse();
+            ua.setAdresseIdAdresse(a);
+            ua.setUtilisateurIdUtilisateur(u);
+
+            return ua;
+        }
 }

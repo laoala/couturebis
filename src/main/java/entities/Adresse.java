@@ -3,6 +3,7 @@ package entities;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
@@ -14,8 +15,11 @@ import java.util.Objects;
                 @NamedQuery(name = "Adresses.findAllNotAdMagasin", query = "SELECT a FROM Adresse a WHERE a.magasinIdMagasin IS NULL"),
 
         })
-public class Adresse {
+public class Adresse implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "IdAdresse", nullable = false)
     private Integer id;
 
@@ -95,11 +99,11 @@ public class Adresse {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Adresse adresse = (Adresse) o;
-        return Objects.equals(id, adresse.id) && Objects.equals(rue, adresse.rue) && Objects.equals(boite, adresse.boite) && Objects.equals(numero, adresse.numero) && Objects.equals(localiteIdLocalite, adresse.localiteIdLocalite) && Objects.equals(magasinIdMagasin, adresse.magasinIdMagasin);
+        return Objects.equals(id, adresse.id) && Objects.equals(rue, adresse.rue) && Objects.equals(boite, adresse.boite) && Objects.equals(numero, adresse.numero);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, rue, boite, numero, localiteIdLocalite, magasinIdMagasin);
+        return Objects.hash(id, rue, boite, numero);
     }
 }

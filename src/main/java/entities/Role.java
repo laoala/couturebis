@@ -3,14 +3,17 @@ package entities;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "role")
 @NamedQuery(name = "Roles.findRoleById", query="SELECT r FROM Role r WHERE r.id=:id")
-public class Role {
+public class Role implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdRole", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 150)

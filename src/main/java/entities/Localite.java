@@ -3,13 +3,22 @@ package entities;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "localite")
-public class Localite {
+@NamedQueries
+        ({
+                @NamedQuery(name= "Localite.findAll", query="SELECT l FROM Localite l"),
+                @NamedQuery(name= "Localite.findAllTry", query="SELECT l FROM Localite l ORDER BY l.ville ASC"),
+        })
+
+public class Localite implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdLocalite", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotNull

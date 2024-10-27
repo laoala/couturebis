@@ -2,6 +2,7 @@ package entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
@@ -9,9 +10,11 @@ import java.util.Objects;
 @NamedQueries({
         @NamedQuery(name = "UtilisateurRole.findUserRoleByUser", query = "SELECT ur FROM UtilisateurRole ur where ur.utilisateurIdUtilisateur.id=:utilisateur"),
 })
-public class UtilisateurRole {
+public class UtilisateurRole implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdUtilisateurRole", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotNull

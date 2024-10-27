@@ -7,6 +7,7 @@ import services.SvcAdresse;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
 import javax.persistence.EntityTransaction;
@@ -16,6 +17,7 @@ import java.util.List;
 
 @Named
 @SessionScoped
+@ManagedBean
 public class AdresseBean implements Serializable {
     // Déclaration des variables globales
     private static final long serialVersionUID = 1L;
@@ -25,6 +27,7 @@ public class AdresseBean implements Serializable {
     @PostConstruct
     public void init()
     {
+        log.info("AdresseBean init");
         adresse = new Adresse();
     }
 
@@ -32,6 +35,11 @@ public class AdresseBean implements Serializable {
     // l'adresse se trouve déjà en base de donnée et nous renvoi sur la table des auteurs
     public String newAdress()
     {
+        log.debug("test 1 ");
+        log.debug(adresse.getId());
+        log.debug(adresse.getRue());
+        log.debug(adresse.getNumero());
+        log.debug(adresse.getLocaliteIdLocalite().getCp());
         if(verifAdresseExist(adresse))
         {
             save();
@@ -42,7 +50,7 @@ public class AdresseBean implements Serializable {
             fc.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,"La donnée est déjà existante en DB",null));
             init();
         }
-        return "/tableAdresse.xhtml?faces-redirect=true";
+        return "/tableAdresses.xhtml?faces-redirect=true";
 
     }
 
@@ -53,6 +61,11 @@ public class AdresseBean implements Serializable {
         EntityTransaction transaction = service.getTransaction();
         transaction.begin();
         try {
+            log.debug("test 2");
+            log.debug(adresse.getId());
+            log.debug(adresse.getRue());
+            log.debug(adresse.getNumero());
+            log.debug(adresse.getLocaliteIdLocalite().getCp());
             service.save(adresse);
             transaction.commit();
             FacesContext fc = FacesContext.getCurrentInstance();
@@ -79,10 +92,12 @@ public class AdresseBean implements Serializable {
         SvcAdresse serviceA = new SvcAdresse();
         if(serviceA.findOneAdresse(ad).size() > 0)
         {
+            log.debug('1');
             serviceA.close();
             return false;
         }
         else {
+            log.debug('2');
             serviceA.close();
             return true;
         }
@@ -94,7 +109,7 @@ public class AdresseBean implements Serializable {
     public String flushAdd()
     {
         init();
-        return "/tableAdresse?faces-redirect=true";
+        return "/tableAdresses?faces-redirect=true";
     }
 
 

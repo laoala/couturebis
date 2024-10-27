@@ -2,13 +2,16 @@ package entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "utilisateur_magasin")
-public class UtilisateurMagasin {
+public class UtilisateurMagasin implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdUtilisateurMagasin", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotNull

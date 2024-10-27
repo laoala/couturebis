@@ -6,13 +6,16 @@ import enumeration.ExemplaireArticleStatutEnum;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "exemplaire_article")
-public class ExemplaireArticle {
+public class ExemplaireArticle implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdExemplaireArticle", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 45)

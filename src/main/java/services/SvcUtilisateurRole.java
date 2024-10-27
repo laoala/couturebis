@@ -1,7 +1,6 @@
 package services;
 
-import entities.Utilisateur;
-import entities.UtilisateurRole;
+import entities.*;
 import org.apache.log4j.Logger;
 
 import java.io.Serializable;
@@ -36,5 +35,14 @@ public class SvcUtilisateurRole extends Service<UtilisateurRole> implements Seri
         param.put("utilisateur", utilisateur.getId());
 
         return finder.findByNamedQuery("UtilisateurRole.findUserRoleByUser", param);
+    }
+
+    public UtilisateurRole createUtilisateurRole(Utilisateur u, Role r)
+    {
+        UtilisateurRole ur = new UtilisateurRole();
+        ur.setRoleIdRole(r);
+        ur.setUtilisateurIdUtilisateur(u);
+
+        return ur;
     }
 }

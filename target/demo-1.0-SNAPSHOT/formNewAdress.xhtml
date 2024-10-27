@@ -12,6 +12,7 @@
         <p:growl id="growl" showDetail="true" sticky="true" />
         <shiro:hasAnyRoles name="1,2,3">
         <h:form id="form" prependId="false">
+            <p:log />
             <h:head>
                 <title>#{I18N['adresse.form.nouveau.titre']}</title>
             </h:head>
@@ -49,7 +50,7 @@
                 <!--<h:message for="adresseNumero" styleClass="errorMessage"/>-->
 
                 <p:outputLabel value = "#{I18N['localite.label.Cp']}"/>
-                <p:selectOneMenu value = "#{adresseBean.adresse.localites}" id="adressLoca"
+                <p:selectOneMenu value = "#{adresseBean.adresse.localiteIdLocalite}" id="adressLoca"
                 converter="localiteConverter">
                     <f:selectItems value = "#{localiteBean.readAll}" var="loca"
                                    itemLabel="#{loca.cp} - #{loca.ville}" itemValue="#{loca}"/>
@@ -57,10 +58,10 @@
 
             </p:panelGrid>
 
-            <p:commandButton icon="pi pi-check-circle" value="#{I18N['application.button.validate']}" action="#{adresseBean.newAdress}"/>
+            <p:commandButton icon="pi pi-check-circle" value="#{I18N['application.button.validate']}" action="#{adresseBean.newAdress}" ajax="false"/>
             <p:commandButton icon="pi pi-home" value="#{I18N['application.button.return']}" action="#{adresseBean.flushAdd}" immediate="true"/>
         </h:form>
-        </shiro:hasAnyRoles>>
+        </shiro:hasAnyRoles>
         <shiro:notAuthenticated>
             <p:outputLabel value="#{I18N['application.page.accessrefuse']}"/>
         </shiro:notAuthenticated>

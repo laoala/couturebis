@@ -26,19 +26,16 @@ import java.util.List;
 public class UtilisateurBean implements Serializable {
     // Déclaration des variables globales
     private static final long serialVersionUID = 1L;
+    private static final Logger log = Logger.getLogger(UtilisateurBean.class);
 
     private Utilisateur utilisateur;
-    private static final Logger log = Logger.getLogger(UtilisateurBean.class);
     private List<Utilisateur> listUtil = new ArrayList<>();
     private List<Utilisateur> listCli = new ArrayList<>();
     private List<Utilisateur> searchResults;
     private String numMembre;
     private Adresse adresses;
     private UtilisateurAdresse UA;
-
     private String mdpNouveau;
-
-
     private String mdpNouveau2;
 
     public UtilisateurBean() {
@@ -47,7 +44,7 @@ public class UtilisateurBean implements Serializable {
 
     @PostConstruct
     public void init() {
-        /*
+
         listUtil = getReadAllUtil();
         listCli = getReadAllCli();
         utilisateur = new Utilisateur();
@@ -62,7 +59,7 @@ public class UtilisateurBean implements Serializable {
         }
         service.close();
 
-         */
+
     }
 
     public String redirectModifUtil(){
@@ -186,8 +183,7 @@ public class UtilisateurBean implements Serializable {
         init();
         return "/tableUtilisateurs.xhtml?faces-redirect=true";
     }
- // Todo : correct the function for inputting new user
-    /*
+
     public String newUtil() {
         boolean flag = false;
         SvcUtilisateurAdresse serviceUA = new SvcUtilisateurAdresse();
@@ -202,7 +198,7 @@ public class UtilisateurBean implements Serializable {
 
 
         if (utilisateur.getId()!=0) {
-            for (UtilisateurAdresse ua : utilisateur.getUtilisateursAdresses()) {
+            for (UtilisateurAdresse ua : utilisateur.getUtilisateurAdresse()) {
                 if (ua.getAdresseIdAdresse().equals(adresses)) {
                     flag = true;
                     UA = ua;
@@ -222,28 +218,23 @@ public class UtilisateurBean implements Serializable {
             fc.getExternalContext().getFlash().setKeepMessages(true);
             fc.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,"L'utilisateur existe déjà tel quel en DB; opération échouée",null));
         }
-        if(utilisateur.getRoles().getDenomination().equals("Client"))
-        {
-            init();
-            return "/tableUtilisateursCli.xhtml?faces-redirect=true";
-        }
 
-        else
-        {
+
+
             init();
             return "/tableUtilisateurs.xhtml?faces-redirect=true";
-        }
+
     }
-    */
+
 
     //todo : correct the function to check if user exist
-    /*
+
     public boolean verifUtilExist(Utilisateur util)
     {
         SvcUtilisateur serviceU = new SvcUtilisateur();
         boolean flag= false;
         if (util.getId()!=0) {
-            for (UtilisateurAdresse ua : util.getUtilisateursAdresses()) {
+            for (UtilisateurAdresse ua : util.getUtilisateurAdresse()) {
                 if (ua.getAdresseIdAdresse().equals(adresses) && ua.getActif()) {
                     flag = true;
                     break;
@@ -267,13 +258,13 @@ public class UtilisateurBean implements Serializable {
             }
         }
     }
-*/
+
     //todo : correct function for creating new client
-    /*
+/*
     public String newUtilCli() {
         boolean flag = false;
-        SvcUtilisateurAdresse serviceUA = new SvcUtilisateursAdresses();
-        SvcRoles serviceR = new SvcRoles();
+        SvcUtilisateurAdresse serviceUA = new SvcUtilisateurAdresse();
+        SvcRole serviceR = new SvcRole();
         utilisateur.setNom(utilisateur.getNom().substring(0,1).toUpperCase() + utilisateur.getNom().substring(1));
         utilisateur.setPrenom(utilisateur.getPrenom().substring(0,1).toUpperCase() + utilisateur.getPrenom().substring(1));
         utilisateur.setRoles(serviceR.findRole("Client").get(0));
@@ -307,7 +298,7 @@ public class UtilisateurBean implements Serializable {
         init();
         return "/tableUtilisateursCli.xhtml?faces-redirect=true";
     }
-    */
+  */
     //Méthode qui va créer un nouveau membre en commencant par le nombre 400000000
     public String createNumMembre()
     {
@@ -330,38 +321,26 @@ public class UtilisateurBean implements Serializable {
     /*Méthode qui permet de désactiver un utilisateur et de le réactiver en verifiant si son rôle est actif ou pas.
     * Si on desactiver/active un client il nous renverra sur la table des clients sinon il nous renverra sur la table des utilisateurs*/
     // todo : correct the function that activate or deactivate user
-    /*
+
     public String activdesactivUtil() {
         if (utilisateur.getActif()) {
             utilisateur.setActif(false);
             saveActif();
-        } else {
-            if ((!utilisateur.getActif()) && (!utilisateur.getRoles().isActif())) {
-                FacesContext fc = FacesContext.getCurrentInstance();
-                fc.getExternalContext().getFlash().setKeepMessages(true);
-                fc.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,"L'utilisateur ne peut pas être réactivé tant que le rôle est désactivé",null));
+        }
+        else {
+            utilisateur.setActif(true);
+            saveActif();
+        }
 
-            } else {
-                utilisateur.setActif(true);
-                saveActif();
-            }
-        }
-        if (utilisateur.getRoles().getDenomination().equals("Client"))
-        {
-            init();
-            return "/tableUtilisateursCli.xhtml?faces-redirect=true";
-        }
-        else
-        {
             init();
             return "/tableUtilisateurs.xhtml?faces-redirect=true";
-        }
+
     }
-    */
+
 
     // Méthode qui permet en fonction de la donnée de l'utilisateur de rechercher un nom parmi les utilisateurs(Client) et nous renvoi sur le formulaire de recherche des utilisateurs(Client)
     //todo : correct the function that search client
-    /*
+
     public String searchUtilisateur() {
 
         SvcUtilisateur service = new SvcUtilisateur();
@@ -377,7 +356,7 @@ public class UtilisateurBean implements Serializable {
         return "/formSearchUtilisateur?faces-redirect=true";
     }
 
-     */
+
     //Méthode qui permet de vider les variables et de revenir sur le table des utilisateurs
     public String flushUtil() {
         init();
@@ -404,7 +383,7 @@ public class UtilisateurBean implements Serializable {
      * Méthode qui permet via le service de retourner la liste de tous les utilisateurs actifs
      */
     //todo : correct the function that give the list of active users
-    /*
+
     public List<Utilisateur> getReadUtilActiv()
     {
         SvcUtilisateur service = new SvcUtilisateur();
@@ -413,84 +392,84 @@ public class UtilisateurBean implements Serializable {
         service.close();
         return listUtil;
     }
-     */
+
 
     /*
      * Méthode qui permet via le service de retourner la liste de tous les utilisateurs inactifs
      */
     //todo : correct the function that gives the list of inactive users
-    /*
-    public List<Utilisateurs> getReadUtilInactiv()
+
+    public List<Utilisateur> getReadUtilInactiv()
     {
-        SvcUtilisateurs service = new SvcUtilisateurs();
+        SvcUtilisateur service = new SvcUtilisateur();
         listUtil = service.findAllUtilisateursInactiv();
 
         service.close();
         return listUtil;
     }
-     */
+
     /*
      * Méthode qui permet via le service de retourner la liste de tous les utilisateurs(Client) inactifs
      */
     // todo : correct the function that gives the list of unactive client
-    /*
-    public List<Utilisateurs> getReadCliInactiv()
+
+    public List<Utilisateur> getReadCliInactiv()
     {
-        SvcUtilisateurs service = new SvcUtilisateurs();
+        SvcUtilisateur service = new SvcUtilisateur();
         listCli = service.findAllUtilisateursCliInactiv();
 
         service.close();
         return listCli;
     }
 
-     */
+
 
     /*
      * Méthode qui permet via le service de retourner la liste de tous les utilisateurs(Client) actifs
      */
     //todo : correct the function that give the list of active client
-    /*
-    public List<Utilisateurs> getReadCliActiv()
+
+    public List<Utilisateur> getReadCliActiv()
     {
-        SvcUtilisateurs service = new SvcUtilisateurs();
+        SvcUtilisateur service = new SvcUtilisateur();
         listCli = service.findAllUtilisateursCliActiv();
 
         service.close();
         return listCli;
     }
 
-     */
+
 
     /*
      * Méthode qui permet via le service de retourner la liste de tous les utilisateurs
      */
     // todo : correct the funtion that give the list of all the users
-    /*
-    public List<Utilisateurs> getReadAllUtil()
+
+    public List<Utilisateur> getReadAllUtil()
     {
-        SvcUtilisateurs service = new SvcUtilisateurs();
+        SvcUtilisateur service = new SvcUtilisateur();
         listUtil = service.findAllUtilisateursUtil();
 
         service.close();
         return listUtil;
     }
 
-     */
+
 
     /*
      * Méthode qui permet via le service de retourner la liste de tous les utilisateurs(Client)
      */
     //todo : correct the function that give the list of all the clients
-    /*
-    public List<Utilisateurs> getReadAllCli()
+
+    public List<Utilisateur> getReadAllCli()
     {
-        SvcUtilisateurs service = new SvcUtilisateurs();
+        SvcUtilisateur service = new SvcUtilisateur();
         listCli = service.findAllUtilisateursCli();
 
         service.close();
         return listCli;
     }
-    */
+
 
 //-------------------------------Getter & Setter--------------------------------------------
     public Utilisateur getUtilisateur() {

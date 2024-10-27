@@ -3,13 +3,16 @@ package entities;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "article")
-public class Article {
+public class Article implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "IdArticle", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 255)
