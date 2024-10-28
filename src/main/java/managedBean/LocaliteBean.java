@@ -4,16 +4,14 @@ import entities.Localite;
 import org.apache.log4j.Logger;
 import services.SvcLocalite;
 
-import javax.enterprise.context.SessionScoped;
-import javax.faces.bean.ManagedBean;
-import javax.inject.Named;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 @Named
 @SessionScoped
-@ManagedBean
 public class LocaliteBean implements Serializable {
     // Déclaration des variables globales
     private static final long serialVersionUID = 1L;

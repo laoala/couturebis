@@ -2,12 +2,11 @@ package managedBean;
 
 import org.apache.log4j.Logger;
 
-import javax.enterprise.context.SessionScoped;
-import javax.faces.application.ViewHandler;
-import javax.faces.bean.ManagedBean;
-import javax.faces.component.UIViewRoot;
-import javax.faces.context.FacesContext;
-import javax.inject.Named;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.faces.application.ViewHandler;
+import jakarta.faces.component.UIViewRoot;
+import jakarta.faces.context.FacesContext;
+import jakarta.inject.Named;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Locale;
@@ -15,7 +14,6 @@ import java.util.TimeZone;
 
 @Named
 @SessionScoped
-@ManagedBean
 public class I18nBean implements Serializable {
 
     private static final long serialVersionUID = 1L;

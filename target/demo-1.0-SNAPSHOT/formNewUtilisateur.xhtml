@@ -14,7 +14,7 @@
 
     <ui:define name="content">
         <p:growl id="growl" showDetail="true" sticky="true" />
-        <shiro:hasPermission name="Utilisateurs:Creer">
+        <shiro:hasAnyRoles name="1,2">
             <h:form id="form" prependId="false">
                 <h:head>
                 <title>#{I18N['utilisateur.form.nouveau.titre']}</title>
@@ -25,7 +25,7 @@
 
                     <p:outputLabel value = "#{I18N['utilisateur.label.Nom']}"/>
                     <p:inputText id="utilisateurNom"
-                                 value="#{utilisateursBean.utilisateur.nom}"
+                                 value="#{utilisateurBean.utilisateur.nom}"
                                  required="true"
                                  requiredMessage="#{I18N['formulaire.message.required.nom']}"
                                  validator = "nomPrenomValidator"
@@ -36,7 +36,7 @@
 
                     <p:outputLabel value = "#{I18N['utilisateur.label.Prenom']}"/>
                     <p:inputText id="utilisateurPrenom"
-                                 value="#{utilisateursBean.utilisateur.prenom}"
+                                 value="#{utilisateurBean.utilisateur.prenom}"
                                  required="true"
                                  requiredMessage="#{I18N['formulaire.message.required.prenom']}"
                                  validator = "nomPrenomValidator"
@@ -46,16 +46,16 @@
                     <!--<h:message for="utilisateurPrenom" styleClass="errorMessage"/>-->
 
                     <p:outputLabel value = "#{I18N['utilisateur.label.Sexe']}"/>
-                    <p:selectOneRadio id="sexe" value="#{utilisateursBean.utilisateur.sexe}"
+                    <p:selectOneRadio id="sexe" value="#{utilisateurBean.utilisateur.sexe}"
                                       required="true"
                                       requiredMessage="#{I18N['formulaire.message.required.sexe']}">
-                        <f:selectItems value="#{utilisateursEnumBean.sexeEnum}" />
+                        <f:selectItems value="#{utilisateurEnumBean.sexeEnum}" />
                     </p:selectOneRadio>
                     <!--<h:message for="sexe" styleClass="errorMessage"/>-->
 
                     <p:outputLabel value = "#{I18N['utilisateur.label.Courriel']}"/>
                     <p:inputText id="utilisateurCourriel"
-                                 value="#{utilisateursBean.utilisateur.courriel}"
+                                 value="#{utilisateurBean.utilisateur.courriel}"
                                  required="true"
                                  requiredMessage="#{I18N['formulaire.message.required.courriel']}"
                                  validator = "emailValidator"
@@ -66,7 +66,7 @@
 
                     <p:outputLabel value = "#{I18N['utilisateur.label.Login']}"/>
                     <p:inputText id="utilisateurLogin"
-                                 value="#{utilisateursBean.utilisateur.login}"
+                                 value="#{utilisateurBean.utilisateur.login}"
                                  required="true"
                                  requiredMessage="#{I18N['formulaire.message.required.login']}"
                                  validator = "utilisateurExistValidator"
@@ -78,7 +78,7 @@
                     <p:outputLabel value = "#{I18N['utilisateur.label.Mdp']}"/>
                     <p:password id="utilisateurMdp"
                                    validatorMessage="La valeur doit être comprise entre 8 et 40 caracteres"
-                                   value="#{utilisateursBean.utilisateur.mdp}"
+                                   value="#{utilisateurBean.utilisateur.mdp}"
                                    requiredMessage="#{I18N['formulaire.message.required.mdp']}"
                                    required="true"
                                    toggleMask="true"
@@ -89,15 +89,16 @@
                     <!--<h:message for="utilisateurMdp" styleClass="errorMessage"/>-->
 
                     <p:outputLabel value = "#{I18N['role.label.Denomination']}"/>
-                    <p:selectOneMenu value = "#{utilisateursBean.utilisateur.roles}" id="roles" required="true" requiredMessage="#{I18N['formulaire.message.required.role']}"
+
+                    <p:selectOneMenu value = "#{utilisateurBean.utilisateur.roles}" id="roles" required="true" requiredMessage="#{I18N['formulaire.message.required.role']}"
                                      converter="roleConverter">
                         <shiro:hasRole name="1">
-                            <f:selectItems value = "#{rolesBean.readActivUtil}" var="ro"
+                            <f:selectItems value = "#{roleBean.readActivUtil}" var="ro"
                                            itemLabel="#{ro.denomination}"
                                            itemValue="#{ro}"/>
                         </shiro:hasRole>
                         <shiro:lacksRole name="1">
-                            <f:selectItems value = "#{rolesBean.readActiv}" var="ro"
+                            <f:selectItems value = "#{roleBean.readActiv}" var="ro"
                                            itemLabel="#{ro.denomination}"
                                            itemValue="#{ro}"/>
                         </shiro:lacksRole>
@@ -106,10 +107,10 @@
                     <!--<h:message for="roles" styleClass="errorMessage"/>-->
 
                     <p:outputLabel value = "#{I18N['adresse.label.Rue']}"/>
-                    <p:selectOneMenu value = "#{utilisateursBean.adresses}" id="utiladress" required="true"
+                    <p:selectOneMenu value = "#{utilisateurBean.adresses}" id="utiladress" required="true"
                                      requiredMessage="#{I18N['formulaire.message.required.adresse']}"
                                      converter="adressConverter">
-                        <f:selectItems value = "#{adressesBean.readAll}" var="ad"
+                        <f:selectItems value = "#{adresseBean.readAll}" var="ad"
                                        itemLabel="#{ad.rue} #{ad.numero} #{ad.boite} #{ad.localites.cp}"
                                        itemValue="#{ad}"/>
                     </p:selectOneMenu>
@@ -120,15 +121,15 @@
 
 
                 </p:panelGrid>
-                <p:commandButton icon="pi pi-check-circle" value="#{I18N['application.button.validate']}" action="#{utilisateursBean.newUtil}"/>
+                <p:commandButton icon="pi pi-check-circle" value="#{I18N['application.button.validate']}" action="#{utilisateurBean.newUtil}"/>
                 <shiro:hasPermission name="Autre:Connexion">
-                <p:commandButton icon="pi pi-home" value="#{I18N['application.button.return']}" action="#{utilisateursBean.flushUtil}" immediate="true"/>
+                <p:commandButton icon="pi pi-home" value="#{I18N['application.button.return']}" action="#{utilisateurBean.flushUtil}" immediate="true"/>
                 </shiro:hasPermission>
             </h:form>
-        </shiro:hasPermission>
-        <shiro:lacksPermission name="Utilisateurs:Creer">
+        </shiro:hasAnyRoles>
+        <shiro:lacksRole name="2">
             <p:outputLabel value="#{I18N['application.page.accessrefuse']}"/>
-        </shiro:lacksPermission>
+        </shiro:lacksRole>
     </ui:define>
 </ui:composition>
 

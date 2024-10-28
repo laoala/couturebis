@@ -1,11 +1,10 @@
 package entities;
 
 import enumeration.FactureEtatEnum;
-import org.eclipse.persistence.jpa.jpql.parser.DateTime;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;

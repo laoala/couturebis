@@ -4,8 +4,8 @@ import connexion.EMF;
 import connexion.EntityFinder;
 import connexion.EntityFinderImpl;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 

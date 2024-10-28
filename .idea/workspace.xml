@@ -9,15 +9,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ac531ba-1fde-409c-a868-9f57b3592fc2" name="Changes" comment="v1.0.42 Le menu déroulant est désormais disponible, un thème de primefaces a été ajouté, plusieurs corrections mineurs MAIS LA BASE DE DONNEES n'est toujours pas accessible.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/converter/AdressConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/converter/LocaliteConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/managedBean/LocaliteBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="7ac531ba-1fde-409c-a868-9f57b3592fc2" name="Changes" comment="test2">
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/angus-activation-2.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.activation-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.activation-api-2.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.el-api-5.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.enterprise.cdi-api-4.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.enterprise.lang-model-4.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.faces-4.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.inject-api-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.mail-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.xml.bind-api-4.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-4.0.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jaxb-xjc-4.0.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jboss-classfilewriter-1.3.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.5.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-annotations-2.2.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-processor-2.2.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jdeparser-2.0.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.24.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/log4j-core-2.24.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-j-9.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/pdfbox-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/pdfbox-io-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/primefaces-13.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-4.26.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/reload4j-1.2.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-cache-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-config-core-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-config-ogdl-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-core-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-cipher-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-core-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-hash-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-event-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-hashes-argon2-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-hashes-bcrypt-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-lang-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-web-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-2.0.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/slf4j-reload4j-2.0.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-api-5.0.SP3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-core-impl-5.1.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-environment-common-5.1.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-jsf-5.1.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-lite-extension-translator-5.1.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-se-core-5.1.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-servlet-core-5.1.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-spi-5.0.SP3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-web-5.1.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-9.0.38/webapps/examples/jsp/cal/Entries.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-9.0.38/webapps/examples/jsp/cal/Entries.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-9.0.38/webapps/examples/jsp/cal/TableBean.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-9.0.38/webapps/examples/jsp/cal/TableBean.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/connexion/EMF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/connexion/EMF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/connexion/EntityFinderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/connexion/EntityFinderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/converter/AdressConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/converter/AdressConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/converter/LocaliteConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/converter/LocaliteConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Adresse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Article.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/ExemplaireArticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/ExemplaireArticle.java" afterDir="false" />
@@ -40,197 +95,169 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/UtilisateurRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/UtilisateurRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/managedBean/AdresseBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managedBean/AdresseBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/managedBean/I18nBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managedBean/I18nBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managedBean/LocaliteBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managedBean/LocaliteBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managedBean/LoginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managedBean/LoginBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/managedBean/RoleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managedBean/RoleBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/managedBean/UtilisateurBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managedBean/UtilisateurBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/SvcAdresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/SvcAdresse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/SvcLocalite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/SvcLocalite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/SvcUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/SvcUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/SvcUtilisateurAdresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/SvcUtilisateurAdresse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/SvcUtilisateurRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/SvcUtilisateurRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bundle/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bundle/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Template/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Template/header.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managedBean/UtilisateurEnumBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managedBean/UtilisateurEnumBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/security/SecurityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/SecurityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/CheckMdpValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/CheckMdpValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/CodeBarreCliValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/CodeBarreCliValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/DateValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/DateValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/EmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/EmailValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/NomPrenomValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/NomPrenomValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/validators/UtilisateurExistValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/UtilisateurExistValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bienvenue.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bienvenue.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNewAdress.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formNewAdress.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tableAdresses.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tableAdresses.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bundle/messages.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/connexion/EMF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/connexion/EntityFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/connexion/EntityFinderImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Adresse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/ExemplaireArticle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Fabricant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Facture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/FactureDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Jour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Localite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Magasin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Pays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Penalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Reservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Tarif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/TarifJour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/TarifPenalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Utilisateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/UtilisateurAdresse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/UtilisateurMagasin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/UtilisateurRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enumeration/ExemplaireArticleEtatEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enumeration/ExemplaireArticleStatutEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enumeration/FactureEtatEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enumeration/UtilisateurSexeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/AdresseBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/I18nBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/LoginBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/RoleBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/UtilisateurBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/UtilisateurEnumBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/security/SecurityManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/IService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcAdresse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcArticle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcExemplaireArticle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcFabricant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcFacture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcFactureDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcJours.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcLocalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcMagasin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcPays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcPenalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcReservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcTarif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcTarifJour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcTarifPenalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcUtilisateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurAdresse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurMagasin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/couture-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/Croix.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/activ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/adresse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/auteurs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/biblio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/biblioLib.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/clients.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/coche.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/desactiv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/edit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/editeurs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/erreur-404.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/exemplaire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/facturation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/facture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/genre.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/inspections.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/inspectionsmini.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/livremini.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/livres.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/location.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/pdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/permissions.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/personne.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/plus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/roles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/sensinterdit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Images/tarifs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Template/footer.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Template/header.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/Template/template.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/bundle/messages.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EMF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EntityFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EntityFinderImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Adresse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/ExemplaireArticle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Fabricant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Facture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/FactureDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Jour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Localite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Magasin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Pays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Penalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Reservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Tarif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/TarifJour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/TarifPenalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Utilisateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurAdresse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurMagasin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/ExemplaireArticleEtatEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/ExemplaireArticleStatutEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/FactureEtatEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/UtilisateurSexeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/AdresseBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/AdressesBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/I18nBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/LoginBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/RoleBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/UtilisateurBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/UtilisateurEnumBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/security/SecurityManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/IService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcAdresse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcArticle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcExemplaireArticle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFabricant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFacture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFactureDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcJours.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcLocalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcMagasin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcPays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcPenalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcReservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarifJour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarifPenalite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurAdresse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurMagasin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/faces-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/connexion/EMF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/connexion/EMF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/connexion/EntityFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/connexion/EntityFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/connexion/EntityFinderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/connexion/EntityFinderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/converter/AdressConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/converter/AdressConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/converter/LocaliteConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/converter/LocaliteConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Adresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Adresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/ExemplaireArticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/ExemplaireArticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Fabricant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Fabricant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Facture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Facture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/FactureDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/FactureDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Jour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Jour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Localite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Localite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Magasin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Magasin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Pays.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Pays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Penalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Penalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Tarif.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Tarif.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/TarifJour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/TarifJour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/TarifPenalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/TarifPenalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Utilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Utilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/UtilisateurAdresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/UtilisateurAdresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/UtilisateurMagasin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/UtilisateurMagasin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/UtilisateurRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/UtilisateurRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enumeration/ExemplaireArticleEtatEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enumeration/ExemplaireArticleEtatEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enumeration/ExemplaireArticleStatutEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enumeration/ExemplaireArticleStatutEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enumeration/FactureEtatEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enumeration/FactureEtatEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enumeration/UtilisateurSexeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enumeration/UtilisateurSexeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/AdresseBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managedBean/AdresseBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/I18nBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managedBean/I18nBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/LocaliteBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managedBean/LocaliteBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managedBean/LoginBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/RoleBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managedBean/RoleBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/UtilisateurBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managedBean/UtilisateurBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managedBean/UtilisateurEnumBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managedBean/UtilisateurEnumBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/security/SecurityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/security/SecurityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/IService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcAdresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcAdresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcArticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcArticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcExemplaireArticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcExemplaireArticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcFabricant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcFabricant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcFacture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcFacture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcFactureDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcFactureDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcJours.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcJours.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcLocalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcLocalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcMagasin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcMagasin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcPays.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcPays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcPenalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcPenalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcReservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcReservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcTarif.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcTarif.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcTarifJour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcTarifJour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcTarifPenalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcTarifPenalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcUtilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurAdresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurAdresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurMagasin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurMagasin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SvcUtilisateurRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validators/CheckMdpValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validators/CheckMdpValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validators/CodeBarreCliValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validators/CodeBarreCliValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validators/DateValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validators/DateValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validators/EmailValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validators/EmailValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validators/NomPrenomValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validators/NomPrenomValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validators/UtilisateurExistValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validators/UtilisateurExistValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EMF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EMF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EntityFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EntityFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EntityFinderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/connexion/EntityFinderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/converter/AdressConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/converter/AdressConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/converter/LocaliteConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/converter/LocaliteConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Adresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Adresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/ExemplaireArticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/ExemplaireArticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Fabricant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Fabricant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Facture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Facture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/FactureDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/FactureDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Jour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Jour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Localite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Localite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Magasin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Magasin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Pays.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Pays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Penalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Penalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Tarif.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Tarif.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/TarifJour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/TarifJour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/TarifPenalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/TarifPenalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Utilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/Utilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurAdresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurAdresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurMagasin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurMagasin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/entities/UtilisateurRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/ExemplaireArticleEtatEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/ExemplaireArticleEtatEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/ExemplaireArticleStatutEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/ExemplaireArticleStatutEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/FactureEtatEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/FactureEtatEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/UtilisateurSexeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/enumeration/UtilisateurSexeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/AdresseBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/AdresseBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/I18nBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/I18nBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/LocaliteBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/LocaliteBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/LoginBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/RoleBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/RoleBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/UtilisateurBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/UtilisateurBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/UtilisateurEnumBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/managedBean/UtilisateurEnumBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/security/SecurityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/security/SecurityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/IService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcAdresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcAdresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcArticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcArticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcExemplaireArticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcExemplaireArticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFabricant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFabricant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFacture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFacture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFactureDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcFactureDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcJours.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcJours.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcLocalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcLocalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcMagasin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcMagasin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcPays.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcPays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcPenalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcPenalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcReservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcReservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarif.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarif.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarifJour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarifJour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarifPenalite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcTarifPenalite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurAdresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurAdresse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurMagasin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurMagasin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/services/SvcUtilisateurRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/CheckMdpValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/CheckMdpValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/CodeBarreCliValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/CodeBarreCliValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/DateValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/DateValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/EmailValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/EmailValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/NomPrenomValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/NomPrenomValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/UtilisateurExistValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/classes/validators/UtilisateurExistValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/afterdark-1.0.10.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/apiguardian-api-1.1.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/cdi-api-2.0-PFD2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/commonj.sdo-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.9.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/cupertino-1.0.10.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-2.7.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-2.7.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-3.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/encoder-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-2.7.7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-4.0.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-3.0.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/bcprov-jdk18on-1.78.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/encoder-1.2.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/encoder-1.2.3.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/excite-bike-1.0.10.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/fontbox-2.0.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/fontbox-2.0.24.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/fontbox-2.0.24.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/fontbox-3.0.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-2.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-2.1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.el-api-4.0.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.enterprise.cdi-api-2.0.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.enterprise.cdi-api-3.0.0.jar" beforeDir="false" />
@@ -238,7 +265,7 @@
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.faces-3.0.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.inject-api-1.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.inject-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.interceptor-api-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.interceptor-api-2.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.interceptor-api-2.1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.persistence-2.2.3.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/javax.el-api-3.0.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/javax.faces-api-2.3-pfd.jar" beforeDir="false" />
@@ -283,7 +310,7 @@
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-event-1.7.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-faces-2.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-lang-1.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-servlet-plugin-1.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-servlet-plugin-1.7.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-servlet-plugin-2.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/shiro-web-1.7.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.21.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.32.jar" beforeDir="false" />
@@ -307,15 +334,9 @@
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-spi-4.0.SP1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-web-3.1.4.Final.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/lib/weld-web-4.0.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/shiro.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/bienvenue.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/css/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/envoiInfo.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/formNewAdress.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/formReinitialisation.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/login.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/tableAdresses.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/formNewUtilisateur.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/formNewUtilisateur.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/tableUtilisateurs.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-1.0-SNAPSHOT/tableUtilisateurs.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +359,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Snake7345/bibliothequePI.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/laoala/couturebis.git&quot;,
     &quot;accountId&quot;: &quot;12f982ca-dcad-4e57-9366-3ccb584b99b7&quot;
   }
 }</component>
@@ -371,44 +392,133 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.demo [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.38.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jerom/IdeaProjects/bibliothequePI2/src/main/java/services/SvcUtilisateursAdresses.java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/jerom/IdeaProjects/bibliothequePI2/src/main/java/services/SvcUtilisateursAdresses.java&quot;,
-    &quot;two.files.diff.last.used.folder&quot;: &quot;C:/Users/jerom/Desktop/New folder (5)/target&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.demo [clean].executor": "Run",
+    "Maven.demo [install].executor": "Run",
+    "Maven.demo [package].executor": "Run",
+    "Maven.demo [site].executor": "Run",
+    "Maven.demo [validate].executor": "Run",
+    "Maven.demo [verify].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 10.1.31.executor": "Run",
+    "Tomcat Server.Tomcat 9.0.38.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jerom/IdeaProjects/bibliothequePI2/src/main/java/services/SvcUtilisateursAdresses.java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "two.files.diff.last.used.file": "C:/Users/jerom/IdeaProjects/bibliothequePI2/src/main/java/services/SvcUtilisateursAdresses.java",
+    "two.files.diff.last.used.folder": "C:/Users/jerom/Desktop/New folder (5)/target",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\theba\Documents\GitHub\bibliothequePI\Lib jar" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.31">
+    <configuration name="Tomcat 10.1.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.31" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="demo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/demo_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="9ac52686-cf03-4f3c-ae73-0bf43e7af61d" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64633" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.38" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.38" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -496,6 +606,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 9.0.38" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.31" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -553,6 +667,8 @@
       <workItem from="1729590449935" duration="8414000" />
       <workItem from="1729854406760" duration="6436000" />
       <workItem from="1730049618671" duration="1271000" />
+      <workItem from="1730129815823" duration="7319000" />
+      <workItem from="1730144200438" duration="1085000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.42 Le menu déroulant est désormais disponible, un thème de primefaces a été ajouté, plusieurs corrections mineurs MAIS LA BASE DE DONNEES n'est toujours pas accessible.">
       <created>1631627805869</created>
@@ -593,7 +709,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="v1.0.42 Le menu déroulant est désormais disponible, un thème de primefaces a été ajouté, plusieurs corrections mineurs MAIS LA BASE DE DONNEES n'est toujours pas accessible." />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.42 Le menu déroulant est désormais disponible, un thème de primefaces a été ajouté, plusieurs corrections mineurs MAIS LA BASE DE DONNEES n'est toujours pas accessible." />
+    <MESSAGE value="test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

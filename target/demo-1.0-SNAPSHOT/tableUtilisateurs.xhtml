@@ -35,7 +35,7 @@
                         <p:column>
                             <f:facet name="header">#{I18N['utilisateur.label.Role']}</f:facet>
                             <ui:repeat value="#{ut.utilisateurRole}" var="utar">
-                                <p:outputLabel rendered="#{utar.actif}" value ="#{utar.roleIdRole.denomination} \n"/>
+                                <p:outputLabel rendered="#{utar.actif}" value ="#{utar.roleIdRole.denomination}"/>
                                 <br/>
                             </ui:repeat>
                         </p:column>

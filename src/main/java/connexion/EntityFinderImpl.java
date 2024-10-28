@@ -3,9 +3,9 @@ package connexion;
 import org.apache.log4j.Logger;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import javax.persistence.TemporalType;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
+import jakarta.persistence.TemporalType;
 import java.io.Serializable;
 import java.util.*;
 
